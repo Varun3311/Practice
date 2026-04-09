@@ -4,7 +4,7 @@ def is_prime(n):
         return f"{n} is not a prime"
     
     # Check for factors from 2 up to the square root of n for efficiency
-    for i in range(2, int(n**0.5) + 1,):
+    for i in range(2, int(n**0.5) + 1):
         if n % i == 0:
             return f"{n} is not a prime"  #Not prime, exit the function immediately
     return f"{n} is prime"
